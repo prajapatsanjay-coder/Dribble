@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+/* navigation bar */
+#nav {
+    height: 90px;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    border-bottom: 2px solid#000;
+}
+
+#nav-part1 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+#nav-part1 h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* nav dribble image */
+#nav img {
+    height: 80px;
+}
+
+/* nav sign up log in button */
+#nav-part2 {
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-part2 button {
+    padding: 15px 22px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 10px;
+}
+
+#nav-part2 button:nth-child(1) {
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+#content {
+    width: 100%;
+    height: calc(100% - 90px);
+    /* background-color: rgb(206, 25, 118); */
+    padding-top: 80px;
+}
+
+#content h3 {
+    font-size: 17px;
+    background-color: #F2B0EA;
+    padding: 12px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+#content h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: 17px 0;
+    font-weight: 100;
+    font-family: sans-serif;
+    line-height: 80px;
+}
+
+#content h4 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content button {
+    padding: 17px 25px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#bottom {
+    height: 380px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#bottom::-webkit-scrollbar {
+    display: none;
+}
+
+.elem {
+    display: inline-block;
+    height: 100%;
+    width: 260px;
+    margin-right: 30px;
+    border-radius: 40px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    position: relative;
+    /* border: 2px solid #000; */
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+#page2 {
+    width: 100%;
+    height: 320vh;
+    /* background-color: grey; */
+    position: relative;
+    padding: 70px;
+    padding: 80px 30px 0 55px;
+
+}
+
+#page2 h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.box {
+    height: 310px;
+    width: 320px;
+    border-radius: 15px;
+    background-color: green;
+    overflow: hidden;
+    display: inline-block;
+    margin: 15px;
+    transition: all ease 0.5s;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.box-bottom {
+    width: 100%;
+    height: 35%;
+    /* background:linear-gradient(to right bottom,red,blue); */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.718));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.5s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box-bottom i {
+    background-color: #fff;
+    padding: 8px 9px;
+    color: #000;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.box-bottom h5 {
+    font-size: 18px;
+
+}
+
+/* .box:hover{
+    scale: 1.5;
+} */
+
+.box:hover .box-bottom {
+    bottom: 0;
+}
+
+.box:hover {
+    /* box-shadow: x axis y axis blur color; */
+    box-shadow: 15px 15px 10px #000;
+}
